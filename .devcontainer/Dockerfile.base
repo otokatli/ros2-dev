@@ -9,6 +9,8 @@ ENV ROS_DISTRO=$ROS_DISTRO
 ENV DEBIAN_FRONTEND=noninteractive
 ENV ROS_WORKSPACE=/home/${USERNAME}/ros2_ws
 
+ENV PYTHONWARNINGS="ignore:easy_install command is deprecated,ignore:setup.py install is deprecated"
+
 # Set the shell to support the "source" command
 SHELL ["/bin/bash", "-euo", "pipefail", "-c"]
 
